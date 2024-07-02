@@ -3,14 +3,17 @@
     "name": "jira-revoker",
     "builds": [
       {
-        "src": "Dockerfile",
-        "use": "@vercel/python"
+        "src": "webserver.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "50mb"
+        }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/"
+        "dest": "webserver.py"
       }
     ]
   }
