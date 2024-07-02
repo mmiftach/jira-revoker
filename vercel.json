@@ -4,10 +4,11 @@
     "builds": [
       {
         "src": "webserver.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "50mb"
-        }
+        "use": "@vercel/python"
+      },
+      {
+        "src": "static/**",
+        "use": "@vercel/static"
       }
     ],
     "routes": [
