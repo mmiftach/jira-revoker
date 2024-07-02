@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "jira-revoker",
+    "builds": [
+      {
+        "src": "Dockerfile",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ]
+  }
