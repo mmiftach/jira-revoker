@@ -204,4 +204,4 @@ def delete_files_in_directory(directory):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=7000)
+    app.run(debug=True)
